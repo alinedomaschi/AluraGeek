@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediamain.css">
+    <title>AluraGeek HP</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <div class="cabecalho__logo_um">
+            <img src="assets/img/image 1.svg" alt="logo coração">
+        </div>
+
+        <div class="cabecalho__logo_dois">
+            <img src="assets/img/AluraGeek.png" alt=" logo AluraGeek">
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <section class="produtos">
+
+            <p class="produtos__titulo">MEUS PRODUTOS:</p>
+
+            <div class="produtos__itens">
+
+                <div>
+
+                    <ul class="produtos__itens_lista">
+                        
+                        <li>
+                            <p class="produtos__itens_preco">$ 180,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/comensais.jpeg" alt="imagem produto">
+                            <p class="produtos__itens_nome">Comensais da Morte</p>
+                        </li>        
+
+                        <li>
+                            <p class="produtos__itens_preco">$ 70,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/hpaviao.jpeg" alt="imagem produto">
+                            <p class="produtos__itens_nome">Kit HP avião</p>
+                        </li>       
+
+                        <li>
+                            <p class="produtos__itens_preco">$ 50,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/caneca.jpeg" alt="imagem produto">
+                            <p class="produtos__itens_nome">Caneca HP</p>
+                        </li>  
+
+                        <li>
+                            <p class="produtos__itens_preco">$ 300,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/kithp.jpeg" alt="imagem produto">
+                            <p class="produtos__itens_nome">Kit Harry Potter</p>
+                        </li>  
+
+                        <li>
+                            <p class="produtos__itens_preco">$ 50,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/agenda.jpeg" alt="imagem produto">
+                            <p class="produtos__itens_nome">Agenda Harry Potter</p>
+                        </li>  
+
+                        <li>
+                            <p class="produtos__itens_preco">$ 90,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/mapamaroto.jpeg" alt="imagem produto">
+                            <p class="produtos__itens_nome">Mapa do maroto</p>
+                        </li> 
+                        
+                        <li>
+                            <p class="produtos__itens_preco">$ 250,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/hermione.jpeg" alt="imagem produto">
+                            <p class="produtos__itens_nome">Funk Pop Hermione</p>
+                        </li> 
+                        
+                        <li>
+                            <p class="produtos__itens_preco">$ 900,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/varinha.jpeg" alt="imagem produto">
+                            <p class="produtos__itens_nome">Varinhas HP</p>
+                        </li> 
+                        <li>
+                            <p class="produtos__itens_preco">$ 60,00 <button onclick="delet(event)" class="delete"><img src="assets/icon/lixeira.png" alt="icone lixeira"></button></p>
+                            <img class="produtos__itens_img" src="assets/img/pomoouro.jpeg" alt="imagem produto">
+                            <p class="produtos__itens_nome">Colar Pomo ouro</p>
+                        </li> 
+                        
+                        
+
+                    </ul>                    
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="adicionar__produtos">
+
+            <p class="adicionar__produtos_titulo">ADICIONAR PRODUTO:</p>
+
+            <div class="adicionar__produtos_inputs">
+
+                <input type="text" name="nome" id="nome" placeholder="nome..." autocomplete="off">
+
+                <input type="number" name="valor" id="valor" placeholder="valor..." autocomplete="off">
+
+                <input type="text" name="imagem" id="imagem" placeholder="imagem..." autocomplete="off">
+
+                <div class="adicionar__produtos_btn">
+
+                    <button class="adicionar__produtos_guardar" onclick="produtosAdicionar()">Guardar</button>
+
+                    <button class="adicionar__produtos_limpar" onclick="limparCampo()">Limpar</button>
+                </div>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+        <div class="rodape__logo">
+
+            <div class="rodape__logo_um">
+                <img src="assets/img/image 1.svg" alt="logo coração">
+            </div>
+
+            <div class="rodape__logo_dois">
+                <img src="assets/img/AluraGeek.png" alt="logo AluraGeek">
+            </div>
+
+        </div>
+
+        <div class="rodape__texto">
+            <p>Desenvolvido por Aline Domaschi</p>
+            <span>ALURA | LATAM | ONE 6 — 2024</span>
+        </div>
+
+    </footer>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
